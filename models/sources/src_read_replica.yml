@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: read_replica
+    database: terminator-386815
+    schema: airbyte_read_replica
+    tables:
+      - name: _airbyte_raw_categories
+        columns:
+          - name: _airbyte_ab_id
+            tests: 
+            - unique
+            - not_null
+      - name: _airbyte_raw_besoin
+        columns:
+          - name: _airbyte_ab_id
+            tests: 
+            - unique
+            - not_null

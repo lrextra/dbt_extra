@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_categories  # Remplacer 'votre_model' par le nom de votre modèle dbt
+    columns:
+      - name: id_categorie
+        tests:
+          - unique
+          - not_null
